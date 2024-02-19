@@ -43,7 +43,7 @@ _The Angular app will be served locally over HTTPS._
 
 ## Notes
 
-- Ensure that you have followed all the steps properly, especially generating SSL certificates using the `ca.sh` script.
+- Ensure that you have followed all the steps properly, especially generating SSL certificates using the `ca.bat` script.
 - You may need to adjust your browser settings to allow connections to the locally served HTTPS application.
 - For development purposes, you might encounter issues with self-signed certificates. Please make sure to configure your development environment accordingly.
 
