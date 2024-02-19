@@ -25,16 +25,35 @@ _Node.js installed on your machine_
 _Angular CLI installed globally (npm install -g @angular/cli)_
 
 **Steps:**
-```
-./gen.bat
-```
-_This script generates local certificates inside the 'certs' directory, specifically 'key.pem' and 'cert.pem'. After executing 'mkcert -install' (the last command in 'gen.bat'), new 'rootCA-key.pem' and 'rootCA.pem' files will be created._
 
+1. Clone this repository:
 ```
-./ca.bat
+  git clone [<repository_url>](https://github.com/theend7/https_app_win)
+  cd <repository_name>
 ```
-_These new files(rootCA-key.pem & rootCA.pem) will replace the existing ones in the local 'certs' directory (located at %UserProfile%/AppData/Local/mkcert)._
+2. Navigate to the certs directory:
+```
+  cd src/certs
+```
+3. Make the gen.bat script executable:
+```
+  icacls "src/certs/gen.bat" /grant "%username%:rx"
+```
+4. Run the script to generate SSL certificates:
+```
+  ./gen.bat
+```
+  _This script will generate cert.pem and key.pem files required for serving the app over HTTPS._
 
+5. Navigate to the app_https directory:
+```
+  cd ../app_https
+```
+6. Install dependencies:
+```
+  npm install
+```
+7. Run the Angular app:
 ```
   npm run app
 ```
