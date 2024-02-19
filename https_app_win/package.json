@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "app": "ng serve --port 4202"
+    "app": "ng serve -o --port 4202 --ssl --ssl-cert ./src/certs/cert.pem --ssl-key ./src/certs/key.pem"
   },
   "private": true,
   "dependencies": {
