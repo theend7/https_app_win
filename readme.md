@@ -25,6 +25,15 @@ _Node.js installed on your machine_
 _Angular CLI installed globally (npm install -g @angular/cli)_
 
 **Steps:**
+```
+./gen.bat
+```
+_This script generates local certificates inside the 'certs' directory, specifically 'key.pem' and 'cert.pem'. After executing 'mkcert -install' (the last command in 'gen.bat'), new 'rootCA-key.pem' and 'rootCA.pem' files will be created._
+
+```
+./ca.bat
+```
+_These new files(rootCA-key.pem & rootCA.pem) will replace the existing ones in the local 'certs' directory (located at %UserProfile%/AppData/Local/mkcert)._
 
 ```
   npm run app
