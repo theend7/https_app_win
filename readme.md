@@ -28,8 +28,8 @@ _Angular CLI installed globally (npm install -g @angular/cli)_
 
 1. Clone this repository:
 ```
-  git clone [Repository>](https://github.com/theend7/https_app_win)
-  cd <repository_name>
+  git clone https://github.com/theend7/https_app_win
+  cd https_app_win
 ```
 2. Navigate to the certs directory:
 ```
